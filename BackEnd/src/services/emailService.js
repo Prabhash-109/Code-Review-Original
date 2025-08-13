@@ -40,7 +40,7 @@ Stay tuned – the best is yet to come!
       We’re excited to help you write code like a pro! 💻
     </p>
     <div style="text-align: center; margin-top: 20px;">
-      <a href="https://codelens.com" style="background-color: #4CAF50; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">
+      <a href="https://codelens-frontend-d1u2.onrender.com" style="background-color: #4CAF50; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">
         Visit CodeLens
       </a>
     </div>
