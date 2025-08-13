@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import Header from '../components/Header.jsx';
 import { Routes, Route, Navigate, useNavigate ,useLocation} from 'react-router-dom';
-import Login from '../pages/login.jsx';
+import Login from '../pages/Login.jsx';
 import Signup from '../pages/Signup.jsx';
 import CodeReview from '../pages/CodeReview.jsx';
 import History from '../pages/History.jsx';
