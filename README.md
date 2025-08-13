@@ -1,4 +1,4 @@
-# CodeLens - AI Code Review App
+# CodeLens - AI Code Review Website
 
 ## Description
 CodeLens is a full-stack MERN app that lets users submit code and get AI-powered reviews. It helps improve code quality with instant feedback and highlights best practices.
