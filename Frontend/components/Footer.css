@@ -1,0 +1,256 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact
+{
+    text-align: center;
+    margin-top: 7%;  
+}
+
+.contact.light {
+  background-color: white;
+  color: #222;
+}
+
+.contact.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.contact .contactoptions
+{
+    display: flex;
+    padding-left: 3%;
+    margin-top: 5%;  
+}
+
+.contact .contactoptions div
+{  
+   width:100%;
+}
+
+.contact .contactoptions img
+{
+    width: 8%;
+}
+.contact .contactoptions .loc img
+{
+    width: 9%;
+}
+/* ===== FOOTER SECTION ===== */
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 3%;
+}
+ .light.footer-top{
+  background-color:white;
+  color: #222;
+  background-image: none;
+  backdrop-filter: none;
+}
+.dark.footer-top{
+  background-color:#121212;
+  color: white;
+  background-image: none;
+  backdrop-filter: none;
+}
+/* Newsletter */
+footer .newsletter
+{
+    width: 50%;
+}
+footer .newsletter img
+{
+    width: 20%;
+}
+
+.custom-icon {
+  font-size: 25px; 
+}
+
+
+footer .newsletter input[type="email"] {
+  width: 60%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+footer.light .newsletter input[type="email"] {
+  border-color: #6a11cb;
+  color: #222;
+  background-color: #fff;
+}
+
+footer.dark .newsletter input[type="email"] {
+  border-color: #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+footer .newsletter input::placeholder {
+  color: #918d8d;
+}
+
+footer .newsletter input[type="button"] {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #6a11cb;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+footer .newsletter input[type="button"] {
+  background-color: #6a11cb;
+}
+
+
+/* Navigation Links */
+footer .navfoot
+{
+ width:25%;
+ line-height: 30px;
+}
+
+footer .navfoot a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+footer .navfoot a:hover {
+  color: #6a11cb;
+}
+
+/* Follow Us Section */
+footer .follow
+{
+    width: 25%;
+    line-height: 40px;  
+}
+footer .follow b
+{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer .follow a
+{
+    text-decoration: none;
+    color:inherit;
+    transition: text-decoration 0.3s ease;
+    font-size: 20px;
+  
+
+}
+
+footer .follow a:hover
+{
+    text-decoration: underline;
+}
+
+footer .follow img
+{
+    width: 5%;
+}
+
+/* Copyright */
+.copyright {
+  text-align: right;
+  font-size: 0.9rem;
+  padding: 1rem 7%;
+  color: white;
+}
+
+/* Divider */
+hr {
+  width: 95%;
+  margin: 0 auto;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+/* Dark Theme Divider */
+.dark hr {
+  background-color: #444;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  footer .newsletter,
+  footer .navfoot,
+  footer .follow {
+    width: 100%;
+  }
+
+  footer .newsletter input[type="email"],
+  footer .newsletter input[type="button"] {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  footer .follow a {
+    font-size: 1.5rem;
+    margin: 0 0.3rem;
+  }
+
+  footer .follow img {
+    width: 8%;
+  }
+
+  footer .navfoot a {
+    font-size: 1rem;
+    display: block;
+    margin: 0.3rem 0;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .contact .contactoptions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .contactoptions div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .contact .contactoptions img {
+    width: 12%;
+  }
+
+  .contact .contactoptions .loc img {
+    width: 13%;
+  }
+}

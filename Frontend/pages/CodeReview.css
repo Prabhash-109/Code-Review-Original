@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+  font-size: 16px;
+}
+
+/* === Main Layout === */
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: #181818;
+}
+
+
+/* === Left and Right Panels === */
+main .left,
+main .right {
+  flex: 1 1 48%;
+  min-height: 400px;
+  max-height: 100%;
+  border-radius: 0.7rem;
+  padding: 1.5rem 2rem;
+  overflow-y: auto;
+  transition: background-color 0.3s ease;
+}
+
+
+/* === Left Panel (Code Input) === */
+main .left {
+  background-color: #1e1e1e;
+  position: relative;
+  font-size: 1.1rem;
+  
+}
+
+.left .code {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.95);
+  color: #e6e6e6;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: monospace;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+/* === Review Button === */
+main .left .review {
+  position: absolute;
+  bottom: 4rem;
+  right: 1rem;
+  background-color: #7f91ff;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.7rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+main .left .review:hover {
+  background-color: #5f76ff;
+  transform: scale(1.05);
+}
+
+/* === Right Panel (Review Output) === */
+main .right {
+  background-color: #121212;
+  font-size: 1rem;
+  color: #eaeaea;
+  line-height: 1.5;
+  border-left: 2px solid #2a2a2a;
+}
+
+/* === Code Editor Custom Textarea === */
+.code-editor textarea {
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 1rem;
+}
+
+/* === Loader Section === */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.loader-container img {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 1.5rem;
+}
+
+.loader-gif {
+  width: 220px;
+  max-width: 80%;
+  margin-bottom: 1.2rem;
+}
+
+.loader-text {
+  font-size: 1.4rem;
+  color: #ddd;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/*Markdown Output */
+.markdown-output {
+  white-space: pre-wrap; /* preserves spaces and line breaks */
+  word-break: break-word; /* allow breaking long words */
+}
+
+
+
+/* === Dots Animation for Loader === */
+.loader-text::after {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  animation: dots 1.2s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0% { content: ''; }
+  33% { content: '.'; }
+  66% { content: '..'; }
+  100% { content: '...'; }
+}
+
+/* === Pulse Animation (Optional Use) === */
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+/* === Responsive Fix for Small Screens === */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  main .left,
+  main .right {
+    flex-basis: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .review {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .loader-container img {
+    width: 180px;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
