@@ -14,7 +14,7 @@ CodeLens is a full-stack MERN app that lets users submit code and get AI-powered
 - Frontend: React, Vite, PrismJS  
 - Backend: Node.js, Express  
 - Database: MongoDB Atlas  
-- Deployment: Render (Backend), Vercel / Render (Frontend)
+- Deployment: Render (Backend), Render (Frontend)
 
 ## Setup
 
