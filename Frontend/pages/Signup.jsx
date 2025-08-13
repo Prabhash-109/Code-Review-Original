@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import './Signup.css';
 import { handleSucces, handleError } from '../src/utils';
+const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ const Signup = () => {
   }
 
   try {
-    const url = "http://localhost:3000/auth/signup";
+    const url = `${API_URL}/auth/signup`;
     const response = await fetch(url, {
       method: 'POST',
       headers: {

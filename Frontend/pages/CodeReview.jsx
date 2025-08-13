@@ -8,6 +8,7 @@ import Markdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github-dark.css";
 import "./CodeReview.css";
+const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 
 function CodeReview() {
@@ -31,7 +32,7 @@ useEffect(() => {
   async function reviewCode() {
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:3000/ai/get-review", { code });
+      const response = await axios.post(`${API_URL}/ai/get-review`, { code });
 
       let aiReviewText;
 

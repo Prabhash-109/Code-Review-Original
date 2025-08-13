@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Footer.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { handleSucces, handleError } from '../src/utils';
+const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 const Footer = ({ theme }) => {
   const year = new Date().getFullYear();
@@ -16,7 +17,7 @@ const Footer = ({ theme }) => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3000/api/subscribe", { email });
+      const res = await axios.post(`${API_URL}/api/subscribe`, { email });
       handleSucces(res.data.message);
       setEmail("");
     } catch (err) {
