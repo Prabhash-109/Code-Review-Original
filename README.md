@@ -23,4 +23,50 @@ CodeLens is a full-stack MERN app that lets users submit code and get AI-powered
 ```bash
 cd Backend
 npm install
-Author Prabhash Jha
+
+2. Create a .env file in the Backend folder:
+MONGO_URI=<your-mongodb-uri>
+PORT=5000
+
+3. Start the backend server:
+npm start
+
+
+
+Frontend
+1. Navigate to the frontend folder:
+cd Frontend
+npm install
+
+2. Create a .env file in the Frontend folder:
+VITE_API_URL=http://localhost:5000
+
+3. Start the frontend dev server:
+npm run dev
+
+Folder Structure
+CodeLens/
+│
+├── Backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── .env
+│   └── server.js
+│
+├── Frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .env
+│   └── package.json
+│
+└── README.md
+
+
+
+
+Author
+Prabhash Jha
