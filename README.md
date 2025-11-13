@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🤖 CodeLens — AI Code Review Application
 
 **CodeLens** is a full-stack web application that lets developers paste code and get **AI-powered code reviews**, keep a local history of reviews, sign up/login, and subscribe for email updates.  
